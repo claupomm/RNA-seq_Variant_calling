@@ -1,4 +1,4 @@
-# RNA-seq_mutation
+# RNA-seq_Variant-calling
 Mutations can also be seen in RNA-seq data although correct allele frequency might not be captured by this. Nevertheless, this workflow describes how to extract mutations from RNA-seq data, which might be useful, if no genome sequencing data is not available. It includes download of public data (GEO/SRA), trimming, mapping, removing duplicate reads, mutation calling, and variant effect prediction/annotation.
 
 
