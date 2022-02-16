@@ -1,4 +1,4 @@
-# RNA-seq_Variant-calling
+# RNA-seq_Variant_calling
 Mutations can also be seen in RNA-seq data although correct allele frequency might not be captured by this. Nevertheless, this workflow describes how to extract mutations from RNA-seq data, which might be useful, if no genome sequencing data is not available. It includes download of public data (GEO/SRA), trimming, mapping, removing duplicate reads, mutation calling, and variant effect prediction/annotation.
 
 
@@ -95,7 +95,7 @@ grep "Clipped 'end' reads" */*.1.o*
 grep "Total reads" */*.1.o*
 
 # duplicates
-grep "records as duplicates." */*.4.err
+grep "records as duplicates." */*.3.err
 
 # alignment statistics
 cd $DIR/star
@@ -104,7 +104,7 @@ grep "% of reads mapped to multiple loci" *.Log.final*
 grep "mapped reads n" *.Log.final*
 grep "Number of input reads" *.Log.final*
 
-# info on sequencing + mapping, star statistics
+# visualise star statistics
 R --file="stats_seq.R"
 ```
 
